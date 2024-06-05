@@ -10,10 +10,24 @@
 </head>
 <body>
     <script>
-        var titulo = document.createElement(h1);
-        var texto_titulo = document.createTextNode('Ola Mundo em HTML feito em JS!');
+        /*var text = window.prompt("digite seu nome:");
+        window.alert(`ola ${text}`);
+        window.confirm(`${text}, você conhece javascripit?`);*/
+        var titulo = document.createElement('h1');
+        var texto_titulo = document.createTextNode('aprendendo javascripit');
         titulo.appendChild(texto_titulo);
-        document.body.inert(titulo)
+        titulo.setAttribute('onclick', 'darkmode()')
+        document.body.appendChild(titulo);
+        var lista = document.createElement('ul')
+        document.body.appendChild(lista);
+        for(let i = 0; i <11; i++){
+            var item_lista = document.createElement('li')
+            var paragrafo = document.createElement('p')
+            var texto_lista = document.createTextNode(`item ${i}`)
+            paragrafo.appendChild(texto_lista)
+            item_lista.appendChild(paragrafo)
+            lista.appendChild(item_lista)            
+        };
     </script>
     <script src="../js/JN003.js"></script>
 </body>

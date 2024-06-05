@@ -6,4 +6,9 @@ function classe_icone(){
     }
 }
 
+function darkmode (){
+    var raiz = document.querySelector('html')
+    raiz.classList.toggle('darkmode')
+}
+
 classe_icone()
